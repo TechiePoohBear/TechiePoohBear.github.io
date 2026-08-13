@@ -335,13 +335,71 @@ footer p {
   font-size: 0.85rem;
 }
 
+/* =========================
+   ACADEMIA
+========================= */
+
+.academia-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.academia-column {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(216, 156, 255, 0.16);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.academia-type {
+  color: #d99cff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.academia-item {
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.academia-item:first-of-type {
+  padding-top: 0;
+}
+
+.academia-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.academia-item h3 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 5px;
+}
+
+.academia-item h4 {
+  color: #dcb0f7;
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.academia-item p {
+  color: #bfc0d3;
+}
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 750px) {
-
+  .academia-grid {
+    grid-template-columns: 1fr;
+  }
+}
+   
   nav {
     height: auto;
     padding: 25px 0;
