@@ -395,10 +395,10 @@ footer p {
 ========================= */
 
 @media (max-width: 750px) {
-  .academia-grid {
+  
+   .academia-grid {
     grid-template-columns: 1fr;
   }
-}
    
   nav {
     height: auto;
