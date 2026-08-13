@@ -256,7 +256,7 @@ section > h2 {
   background: rgba(255, 255, 255, 0.025);
 }
 
-.skills-grid > div:last-child {
+.skills-grid .full-width {
   grid-column: 1 / -1;
 }
 
