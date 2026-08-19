@@ -391,6 +391,24 @@ footer p {
 }
 
 /* =========================
+   PROJECT PAGE NAVIGATION
+========================= */
+
+.back-link {
+  display: inline-block;
+  color: #e5b8ff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  color: #ffffff;
+  transform: translateX(-4px);
+}
+
+/* =========================
    MOBILE
 ========================= */
 
