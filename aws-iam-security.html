@@ -14,20 +14,160 @@
 
   <main>
 
-    <section class="project-case-study">
+  <section class="project-case-study">
 
-      <p class="section-label">CLOUD SECURITY PROJECT</p>
+    <p class="section-label">CLOUD SECURITY PROJECT</p>
 
-      <h1>AWS Identity & Access Security Lab</h1>
+    <h1>AWS IAM & KMS Security Architecture</h1>
 
-      <p>
-        A hands-on AWS security lab focused on identity and access management,
-        encryption, conditional access, and least-privilege security controls.
-      </p>
+    <p>
+      A hands-on AWS security lab focused on identity and access management,
+      encryption, conditional access, and least-privilege security controls.
+    </p>
 
-    </section>
+  </section>
 
-  </main>
+
+  <section>
+
+    <p class="section-label">PROJECT OVERVIEW</p>
+
+    <h2>Security Objective</h2>
+
+    <p>
+      This project demonstrates how AWS IAM, Amazon S3, and AWS KMS can work
+      together to enforce least privilege, separation of duties, secure access
+      to cloud storage, and encryption controls across development and
+      production environments.
+    </p>
+
+  </section>
+
+
+  <section>
+
+    <p class="section-label">SECURITY ARCHITECTURE</p>
+
+    <h2>Identity and Access Design</h2>
+
+    <div class="skills-grid">
+
+      <div>
+        <h3>Alice</h3>
+        <p>
+          Configured with development access and encryption permissions using
+          a customer-managed AWS KMS key.
+        </p>
+      </div>
+
+      <div>
+        <h3>Beavis</h3>
+        <p>
+          Configured with development access, restricted production access,
+          and decryption permissions using AWS KMS.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <p class="section-label">SECURITY CONTROLS</p>
+
+    <h2>Controls Implemented</h2>
+
+    <div class="tags">
+      <span>Least Privilege</span>
+      <span>Separation of Duties</span>
+      <span>S3 Access Control</span>
+      <span>AWS KMS Encryption</span>
+      <span>Conditional Access</span>
+      <span>Explicit Deny</span>
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <p class="section-label">IMPLEMENTATION EVIDENCE</p>
+
+    <h2>Project Evidence</h2>
+
+    <div class="evidence-grid">
+
+      <div class="evidence-item">
+        <img
+          src="images/aws-iam-security/iam-users.png"
+          alt="AWS IAM users Alice and Beavis">
+        <p>IAM Users</p>
+      </div>
+
+      <div class="evidence-item">
+        <img
+          src="images/aws-iam-security/iam-policies.png"
+          alt="AWS IAM security policies">
+        <p>IAM Policies</p>
+      </div>
+
+      <div class="evidence-item">
+        <img
+          src="images/aws-iam-security/kms-policy.png"
+          alt="AWS KMS key policy showing separation of encryption and decryption permissions">
+        <p>KMS Policy</p>
+      </div>
+
+      <div class="evidence-item">
+        <img
+          src="images/aws-iam-security/encrypted-s3-object.png"
+          alt="Amazon S3 object protected with AWS KMS encryption">
+        <p>Encrypted S3 Object</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <p class="section-label">WHAT I LEARNED</p>
+
+    <h2>Key Takeaways</h2>
+
+    <p>
+      This project helped me understand how AWS security controls work together
+      in practice. I learned how to design user permissions using least privilege
+      and separation of duties, protect S3 data with KMS encryption, and
+      troubleshoot IAM and authentication issues when access did not behave as
+      expected.
+    </p>
+
+    <p>
+      <a
+        href="https://github.com/TechiePoohBear/aws-iam-kms-security-lab/tree/main"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-button">
+        View Full Project on GitHub
+      </a>
+    </p>
+
+  </section>
+
+
+  <section>
+
+    <a href="index.html" class="back-link">
+      ← Back to Portfolio
+    </a>
+
+  </section>
+
+</main>
 
 </body>
 
