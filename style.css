@@ -407,7 +407,75 @@ footer p {
   color: #ffffff;
   transform: translateX(-4px);
 }
+/* =========================
+   PROJECT CASE STUDY
+========================= */
 
+.project-case-study h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.project-case-study > p:not(.section-label) {
+  max-width: 850px;
+  font-size: 1.1rem;
+}
+
+
+/* =========================
+   IMPLEMENTATION EVIDENCE
+========================= */
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.evidence-item {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(216, 156, 255, 0.16);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.evidence-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: block;
+}
+
+.evidence-item p {
+  color: #e5c5f7;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+
+/* =========================
+   PROJECT BUTTON
+========================= */
+
+.project-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 24px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #d99cff, #b88cff);
+  color: #111220;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.project-button:hover {
+  transform: translateY(-3px);
+}
 /* =========================
    MOBILE
 ========================= */
@@ -417,7 +485,9 @@ footer p {
    .academia-grid {
     grid-template-columns: 1fr;
   }
-   
+   .evidence-grid {
+  grid-template-columns: 1fr;
+}
   nav {
     height: auto;
     padding: 25px 0;
