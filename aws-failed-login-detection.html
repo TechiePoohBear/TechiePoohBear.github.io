@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AWS Failed Console Login Detection & Alerting | Winie Camille</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section>
+
+  <p class="section-label">CLOUD SECURITY</p>
+
+  <h2>AWS Failed Console Login Detection & Alerting</h2>
+
+  <p>
+    Built and validated an AWS security detection workflow that identifies
+    failed Management Console login attempts and generates automated security
+    alerts using CloudTrail, CloudWatch, and Amazon SNS.
+  </p>
+
+  <div class="tags">
+    <span>AWS</span>
+    <span>CloudTrail</span>
+    <span>CloudWatch</span>
+    <span>Amazon SNS</span>
+    <span>Detection Engineering</span>
+    <span>Cloud Security</span>
+  </div>
+
+</section>
+
+
+  <section>
+
+  <p class="section-label">PROJECT OVERVIEW</p>
+
+  <h2>Security Objective</h2>
+
+  <p>
+    The objective of this project was to build and validate a cloud-based
+    detection mechanism capable of identifying failed AWS Management Console
+    authentication attempts. CloudTrail events were forwarded to CloudWatch
+    Logs, evaluated using a metric filter, and converted into a custom security
+    metric that could trigger an automated alert.
+  </p>
+
+</section>
+
+
+  <section>
+
+  <p class="section-label">TECHNOLOGIES</p>
+
+  <h2>AWS Services Used</h2>
+
+  <div class="skills-grid">
+
+    <div>
+      <h3>AWS CloudTrail</h3>
+      <p>
+        Captured AWS account activity and recorded Management Console
+        authentication events used by the detection workflow.
+      </p>
+    </div>
+
+    <div>
+      <h3>Amazon CloudWatch Logs</h3>
+      <p>
+        Received CloudTrail events and provided centralized log data for
+        security monitoring and detection.
+      </p>
+    </div>
+
+    <div>
+      <h3>CloudWatch Metric Filter</h3>
+      <p>
+        Filtered CloudTrail log events for failed ConsoleLogin activity and
+        generated the custom FailedConsoleLoginCount metric.
+      </p>
+    </div>
+
+    <div>
+      <h3>CloudWatch Alarm</h3>
+      <p>
+        Monitored the custom failed-login metric and entered the ALARM state
+        when the configured threshold was reached.
+      </p>
+    </div>
+
+    <div>
+      <h3>Amazon SNS</h3>
+      <p>
+        Delivered an automated email security notification when the
+        CloudWatch alarm was triggered.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+ <section>
+
+  <p class="section-label">SECURITY WORKFLOW</p>
+
+  <h2>Detection & Alerting Workflow</h2>
+
+  <p>
+    Failed AWS Management Console login attempts are captured by CloudTrail
+    and delivered to CloudWatch Logs. A metric filter identifies matching
+    failed-login events and increments the custom FailedConsoleLoginCount
+    metric. When the metric reaches the configured threshold, the CloudWatch
+    alarm enters the ALARM state and invokes Amazon SNS to send an automated
+    email security alert.
+  </p>
+
+  <p>
+    CloudTrail → CloudWatch Logs → Metric Filter → Custom Metric →
+    CloudWatch Alarm → Amazon SNS → Email Security Alert
+  </p>
+
+</section>
+
+
+  <section>
+
+  <p class="section-label">SECURITY VALUE</p>
+
+  <h2>What This Demonstrates</h2>
+
+  <p>
+    This project demonstrates hands-on experience building and validating
+    cloud-native security detections. It shows the ability to collect and
+    analyze authentication events, define detection logic, create custom
+    security metrics, configure alert thresholds, and automate security
+    notifications.
+  </p>
+
+  <p>
+    The workflow demonstrates concepts applicable to cloud security
+    monitoring, detection engineering, SOC operations, and incident
+    detection.
+  </p>
+
+</section>
+
+
+  <section>
+
+  <p class="section-label">SKILLS</p>
+
+  <h2>Skills Demonstrated</h2>
+
+  <div class="tags">
+    <span>AWS Security Monitoring</span>
+    <span>CloudTrail Log Analysis</span>
+    <span>CloudWatch Logs</span>
+    <span>Metric Filter Creation</span>
+    <span>Security Alert Configuration</span>
+    <span>Amazon SNS</span>
+    <span>Authentication Monitoring</span>
+    <span>Detection Engineering</span>
+    <span>Cloud Security</span>
+  </div>
+
+</section>
+
+  <section>
+
+  <p class="section-label">PROJECT RESULTS</p>
+
+  <h2>Detection Successfully Validated</h2>
+
+  <p>
+    A controlled failed-authentication test generated matching login events.
+    The custom metric detected the activity, caused the CloudWatch alarm to
+    enter the ALARM state, and triggered an automated Amazon SNS email
+    notification.
+  </p>
+
+  <h3>CloudWatch Detection</h3>
+
+  <img
+    src="https://raw.githubusercontent.com/TechiePoohBear/aws-failed-login-detection/main/screenshots/Alarm-Alert.png"
+    alt="AWS CloudWatch failed console login alarm in ALARM state"
+    style="width:100%; margin-top:20px; border-radius:8px;"
+  >
+
+  <h3 style="margin-top:40px;">Automated Security Alert</h3>
+
+  <img
+    src="https://raw.githubusercontent.com/TechiePoohBear/aws-failed-login-detection/main/screenshots/Alarm-Email-Details.png"
+    alt="Amazon SNS email notification for failed AWS console login detection"
+    style="width:100%; margin-top:20px; border-radius:8px;"
+  >
+
+    <p style="margin-top:30px;">
+  <a
+    href="https://github.com/TechiePoohBear/aws-failed-login-detection"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="back-link"
+  >
+    View Full Project on GitHub →
+  </a>
+</p>
+    
+</section>
+
+  <section>
+
+<a href="index.html" class="back-link">← Back to Portfolio</a>
+    
+  </section>
+
+</body>
+
+</html>
